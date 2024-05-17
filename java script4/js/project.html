@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project for the to do list </title>
+</head>
+<body>
+    <input type="text" placeholder="username">
+
+    <br>
+    <br>
+
+    <button onclick="askForInput()" class="btnClass"> Get user input</button>
+<div id="username"></div>
+<br/>
+<br/>
+<button onclick="deleteThePost()" class="btnClass"> Delete the post</button>
+ 
+<script>
+
+    function deleteThePost() {
+    let elements = document.getElementsByClassName("btnClass");
+
+    let confirm = window.confirm("are you sure your want to delete ? ");
+    let element = document.getElementById("username");
+
+    if (confirm) {
+        element.innerHTML = "Post deleted";
+    } else{
+        element.innerHTML = "Post Not deleted"; 
+    }
+}
+
+</script>
+</body>
+</html>

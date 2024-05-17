@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+    </head>
+
+    <body>
+
+        
+    <!--external style-->
+
+    <link rel="stylesheet" href="stylesheet"/>
+
+    <!--internal js code in head-->
+
+    <script type="text/javascript">
+        //javascript code in head
+        //here we will add the functionality
+        function displaywelcomemessage(){
+            alert ("welcome to javascript & love you for best teaching leson !!");
+            //
+        }
+        function loginn(){
+            // i can send the 
+            
+        }
+    </script>
+    <script src="./first_js_file.js"></script>
+
+<!-- inline style -->
+<div style="background-color: red;"></div>
+
+<button onclick="displaywelcomemessage()">click me!</button>
+<button onclick="enternalmessage()">external js</button>
+
+<input type="text" placeholder="username">
+<input type="password" placeholder="password" >
+<button onclick="login()">log in </button>
+
+<!--/*************** functional scope vs block scope ***************/
+
+Scope: refers to the visibility of a variable
+
+var a = 10;
+
+function name1() {
+
+let b = 20;
+
+var c = 30;
+
+if (true) {
+
+let d = 40;
+
+var e = 50;
+
+}
+
+console.log(a); // 10, lexical scoping
+
+console.log(b); // 20, block scope
+
+console.log(c); // 30, functional scope
+
+console.log(d); // Error: d has a block scope
+
+console.log(e); // 50, e has a functional scope
+ 
+}
+
+name1();
+
+console.log(a); // 10, functional scope
+
+console.log(b); // Error, block scope
+
+console.log(c); // Error, functional scope
+
+console.log(d); // Error, block scope
+
+console.log(e); // Error, functional scope-->
+<br>
+<br>
+<div id="myDiv">welcome to Google!! </div> <br><br>
+<button onclick="changeMyCompany()" class="btnClass">Change Company</button>
+<br/>
+<br/>
+<br>
+
+<button onclick="askForInput()" class="btnClass"> Get user input</button>
+<div id="username"></div>
+<br/>
+<br/>
+<button onclick="deleteThePost()" class="btnClass"> Delete the post</button>
+
+
+</body>
+</html>
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /* .body{
+            background-color: pink;
+            
+        }
+        @media screen and (min-width: 500px){ 
+        .div-bg{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+        }
+        .less{display: none;
+ 
+        }
+        .more{
+            display: initial;
+        }
+    }
+     media query print*/
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <h2>media query </h2> 
+    
+    <!-- 
+        media querys
+        syntax 
+        @media screen (min-wisdth :320px) and (max-width: 760px)
+
+        -@media         -> declation for a media Query (mendatory)
+        -screen         -> media type
+        -min-width      -> media feature (minmum width of the screen)
+        -and            ->operator
+        -anu            ->operator
+        -max-width      ->media feature (maximum width of the screen)
+
+    -media type:
+    -all            ->all media device
+    -screen         ->screen type or the resolution
+    -print          ->printers
+    
+    -operator:
+    -AND            ->satisfy both the condition
+    -OR             ->satisfy either of the condition
+    -NOT            -> satisfy neither of the condition
+
+    -->
+    <!-- screen example -->
+    <div class="div-bg">
+        <p class="less"> div container <br>
+        with is less than 500px </p>
+        <p class="more"> div container <br>
+        with is more than 500px</p>
+    </div>
+</body>
+</html>
