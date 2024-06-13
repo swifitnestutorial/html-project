@@ -1,0 +1,26 @@
+[
+    {
+        "id":1,
+        "name":"wedding shoot",
+        "price":25000,
+        "type":"-",
+        "description":"this is a proffeciona photographer",
+        "img":"wedding shoto.jpg"
+    },
+    {
+        "id":2,
+        "name":"birthday shoot",
+        "price":5000,
+        "type":"-",
+        "description":"this is a proffeciona photographer",
+        "img":"birthday shoto.jpg"
+    },
+    {
+        "id":3,
+        "name":"prewedding shoot",
+        "price":15000,
+        "type":"-",
+        "description":"this is a proffeciona photographer",
+        "img":"preweding shoto.jpg"
+    }
+]

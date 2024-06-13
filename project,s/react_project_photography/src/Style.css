@@ -1,0 +1,70 @@
+body, h1, h2, p, ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-color: turquoise;
+}
+h12{
+  content: center;
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: pink;
+}
+
+header {
+  background: #333;
+  color: pink;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+.hero-section h2 {
+  font-size: 2.5rem;
+}
+
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.gallery img {
+  width: calc(33% - 1rem);
+  height: auto;
+  border: 3px solid #333;
+  border-color: palevioletred;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
