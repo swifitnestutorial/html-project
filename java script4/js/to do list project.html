@@ -5,10 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script> 
-
     <style>
-      body{
+        
+ body{
     background-color: rgb(4, 29, 29);
     font-family: 'Poppins', sans-serif;
  }
@@ -54,11 +53,13 @@
     right: 10px;
     cursor: pointer;
  }
-</style>
+    </style>
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>
    <div class="container">
-    <h1 class="h1">ToDo App</h1>
+    <h1>ToDo App</h1>
     <div class="inputs">
         <input type="text" placeholder="Enter Your Task" id="inp">
         <button onclick="Add()">Add</button>
@@ -69,16 +70,17 @@
    </div>
 
     <script>
-let inputs = document.getElementById("inp");
-let text = document.querySelector(".text");
+let inputs = document.getElementById("inp"); //let variable use karke inputs variable name diya he 
+let text = document.querySelector(".text");  // text function ko target kiya 
 
 function Add(){
     if(inputs.value == ""){
-        alert("Please Enter Task")
+        alert("Please Enter Task") // user ne without iput text ke add kiya to message show hona chahiye 
     }else{
-        let newEle = document.createElement("ul");
+        let newEle = document.createElement("ul");  // new element create karne ke liye 
         newEle.innerHTML=`${inputs.value} <i class="fa-solid fa-trash"></i>`;
-        text.appendChild(newEle);
+
+        text.appendChild(newEle); // text ko appendchild me dalne ke liye use kiya jata hai 
         inputs.value="";
         newEle.querySelector("i").addEventListener("click" , remove);
         function remove(){
